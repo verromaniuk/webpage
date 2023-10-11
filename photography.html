@@ -37,48 +37,61 @@
       text-decoration: none;
     }
 
-    section {
+   section {
       margin-top: 20px;
-      text-align: center; /* Center-align section content */
     }
 
     img {
       max-width: 100%;
-      margin: 10px 0; /* Add space above and below each image */
     }
 
     ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 16px;
-      font-weight: normal;
-      color: #ffffff;
-    }
-  </style>
-</head>
-
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html"> Home </a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2 id="barPublichnyiTitle" onclick="revealImage('barPublichnyi')">Bar Publichnyi 2023</h2>
-    <div id="barPublichnyi" style="display: none;">
-      <img src="bar_publichnyi.jpg" alt="Bar Publichnyi">
-      <img src="bar_publichnyi1.jpg" alt="Bar Publichnyi1">
-      <img src="bar_publichnyi2.jpg" alt="Bar Publichnyi2">
-      <img src="bar_publichnyi3.jpg" alt="Bar Publichnyi3">
+	@@ -76,49 +78,8 @@ <h2 id="barPublichnyiTitle" onclick="revealImage('barPublichnyi')">Bar Publichny
     </div>
   </section>
 
-  <!-- Add more sections for your photography content as needed -->
+  <section>
+    <h2 id="jamFactoryTitle" onclick="revealImage('jamFactory')">Jam Factory 2020</h2>
+    <div id="jamFactory" style="display: none;">
+      <img src="jam_factory.jpg" alt="Jam Factory">
+    </div>
+  </section>
+
+    <section>
+    <h2 id="coworkingBBuroTitle" onclick="revealImage('coworkingBBuro')">Co-Working Balbek Buro 2020</h2>
+    <div id="coworkingBBuro" style="display: none;">
+      <img src="coworking_bburo.jpg" alt="Co-Working Balbek Buro">
+    </div>
+  </section>
+
+    <section>
+    <h2 id="kyiv2020Title" onclick="revealImage('kyiv2020')">Kyiv on Film 2020</h2>
+    <div id="kyiv2020" style="display: none;">
+      <img src="kyiv_2020.jpg" alt="Kyiv 2020">
+      <img src="kyiv_20201.jpg" alt="Kyiv 2020">
+      <img src="kyiv_20202.jpg" alt="Kyiv 2020">
+      <img src="kyiv_20203.jpg" alt="Kyiv 2020">
+      <img src="kyiv_20204.jpg" alt="Kyiv 2020">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="chessBBuroTitle" onclick="revealImage('chessBBuro')">Chess at Kashtan by Balbek Buro 2020</h2>
+    <div id="chessBBuro" style="display: none;">
+      <img src="chess_bburo.jpg" alt="Chess at Kashtan by Balbek Buro">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="zaatariCampTitle" onclick="revealImage('zaatariCamp')">Zaatari Refugee Camp 2019</h2>
+    <div id="zaatariCamp" style="display: none;">
+      <img src="zaatari_camp.jpg" alt="Zaatari Refugee Camp">
+      <img src="zaatari_camp1.jpg" alt="Zaatari Refugee Camp">
+      <img src="zaatari_camp2.jpg" alt="Zaatari Refugee Camp">
+      <img src="zaatari_camp3.jpg" alt="Zaatari Refugee Camp">
+      <img src="zaatari_camp4.jpg" alt="Zaatari Refugee Camp">
+    </div>
+  </section>
 
   <script>
     function revealImage(sectionId) {
