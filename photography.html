@@ -1,48 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <Title>
-Veronika Romaniuk
-</Title>
-<style type=text/css>
-body
-{
-height: 125vh;
-margin-top: 80px;
-padding: 30px;
-background-size: cover;
-font-family: sans-serif;
-}
-header {
-background-color: blue;
-position: fixed;
-left: 0;
-right: 0;
-top: 5px;
-height: 30px;
-display: flex;
-align-items: center;
-box-shadow: 0 0 25px 0 black;
-}
-header * {
-display: inline;
-}
-header li {
-margin: 20px;
-}
-header li a {
-color: white;
-text-decoration: none;
-}
-</style>
-  </head>
+<head>
+  <title>Veronika Romaniuk</title>
+  <style type="text/css">
+    body {
+      height: 125vh;
+      margin-top: 80px;
+      padding: 30px;
+      background-color: black;
+      font-family: sans-serif;
+      color: white;
+    }
 
-  <body style="background-color:black;">
-   <nav>
-<ul>
-<li>
-<a href="index.html"> Home </a>
-</li>
-</ul>
-</nav>
-  </body>
+    header {
+      background-color: blue;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 5px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 0 25px 0 black;
+    }
+
+    header * {
+      display: inline;
+    }
+
+    header li {
+      margin: 20px;
+    }
+
+    header li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    /* Remove bullet point for the list item */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html"> Home </a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 id="barPublichnyiTitle" onclick="revealImage('barPublichnyi')">Bar Publichnyi</h2>
+    <div id="barPublichnyi" style="display: none;">
+      <img src="bar_publichnyi.jpg" alt="Bar Publichnyi">
+      <img src="bar_publichnyi1.jpg" alt="Bar Publichnyi1">
+      <img src="bar_publichnyi2.jpg" alt="Bar Publichnyi2">
+      <img src="bar_publichnyi3.jpg" alt="Bar Publichnyi3">
+    </div>
+  </section>
+
+  <section>
+    <h2 id="jamFactoryTitle" onclick="revealImage('jamFactory')">Jam Factory</h2>
+    <div id="jamFactory" style="display: none;">
+      <img src="jam_factory.jpg" alt="Jam Factory">
+    </div>
+  </section>
+
+  <script>
+    function revealImage(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section.style.display === "none") {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
