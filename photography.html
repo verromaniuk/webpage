@@ -1,49 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <Title>
-Veronika Romaniuk
-</Title>
-<style type=text/css>
-body
-{
-height: 125vh;
-margin-top: 80px;
-padding: 30px;
-background-size: cover;
-font-family: sans-serif;
-}
-header {
-background-color: blue;
-position: fixed;
-left: 0;
-right: 0;
-top: 5px;
-height: 30px;
-display: flex;
-align-items: center;
-box-shadow: 0 0 25px 0 black;
-}
-header * {
-display: inline;
-}
-header li {
-margin: 20px;
-}
-header li a {
-color: white;
-text-decoration: none;
-}
-</style>
-  </head>
+<head>
+    <title>Veronika Romaniuk</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            font-family: sans-serif;
+            background-color: black;
+        }
 
-  <body style="background-color:black;">
-   <nav>
-<ul>
-<li>
-<a href="index.html"> Home </a>
-</li>
-</ul>
-</nav>
-  </body>
+        header {
+            background-color: blue;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Styling for subsections */
+        .section {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        .section h1 {
+            cursor: pointer;
+            color: blue; /* Change the color to indicate it's clickable */
+        }
+    </style>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section for "Jam Factory" -->
+    <div class="section" id="jamFactory">
+        <h1 onclick="toggleSection('jamFactory')">Jam Factory</h1>
+        <img src="jam_factory.jpg" alt="Jam Factory Photo">
+        <p>Description of the Jam Factory photography content.</p>
+    </div>
+
+    <!-- Section for "Chess Tournament Kashtan" -->
+    <div class="section" id="chessTournament">
+        <h1 onclick="toggleSection('chessTournament')">Chess Tournament Kashtan</h1>
+        <img src="chess_tournament.jpg" alt="Chess Tournament Kashtan Photo">
+        <p>Description of the Chess Tournament Kashtan photography content.</p>
+    </div>
+</body>
+
 </html>
