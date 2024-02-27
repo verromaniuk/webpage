@@ -37,6 +37,12 @@ text-decoration: none;
 .center {
 text-align: center;
 }
+          #fractalVideo {
+            width: 100vw; /* Adjusted to 100vw for full viewport width */
+            height: auto; /* Allows the height to adjust proportionally */
+            display: block;
+            margin: auto; /* Centers the video horizontally */
+        }
 </style>
   </head>
   
@@ -59,7 +65,7 @@ text-align: center;
 <li> <a href="about.html"> About </a>
 </li>
   <br>
-         <video width="1420" height="1080" controls>
+    <video id="fractalVideo" controls>
         <source src="fr1.MOV" type="video/quicktime">
         Your browser does not support the video tag.
     </video>
