@@ -34,6 +34,14 @@ header li a {
 color: white;
 text-decoration: none;
 }
+          nav {
+            text-align: justify; /* Align text on both sides */
+        }
+
+        nav::after {
+            content: "";
+            flex-grow: 9999; /* Grow a flexible item to fill the remaining space */
+        }
 </style>
   </head>
 
