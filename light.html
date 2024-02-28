@@ -85,6 +85,14 @@
         section.style.display = "none";
       }
     }
+	      document.addEventListener('DOMContentLoaded', function () {
+      var video = document.getElementById('buckVideo');
+      var posterImage = document.querySelector('video[id="buckVideo"] + img');
+      
+      posterImage.addEventListener('click', function () {
+        video.play();
+      });
+    });
   </script>
 </body>
 </html>
