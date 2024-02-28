@@ -85,26 +85,19 @@
         section.style.display = "none";
       }
     }
-	      document.addEventListener('DOMContentLoaded', function () {
+
+    document.addEventListener('DOMContentLoaded', function () {
       var video = document.getElementById('buckVideo');
       var posterImage = document.querySelector('video[id="buckVideo"] + img');
       
+      console.log(video); // Check if video element is selected correctly
+      console.log(posterImage); // Check if poster image is selected correctly
+
       posterImage.addEventListener('click', function () {
+        console.log('Poster image clicked'); // Debugging statement
         video.play();
       });
     });
-	  document.addEventListener('DOMContentLoaded', function () {
-    var video = document.getElementById('buckVideo');
-    var posterImage = document.querySelector('video[id="buckVideo"] + img');
-
-    console.log(video); // Check if video element is selected correctly
-    console.log(posterImage); // Check if poster image is selected correctly
-
-    posterImage.addEventListener('click', function () {
-        console.log('Poster image clicked'); // Debugging statement
-        video.play();
-    });
-});
   </script>
 </body>
 </html>
