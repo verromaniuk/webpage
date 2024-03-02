@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veronika Romaniuk</title>
+    <style type="text/css">
+        body {
+            height: auto; /* Changed to auto for dynamic height */
+            margin-top: 80px;
+            padding: 30px;
+            background-color: black;
+            font-family: sans-serif;
+            color: white;
+            text-align: center; /* Center align the body content */
+        }
+        header {
+            background-color: blue;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+            z-index: 100;
+        }
+        header * {
+            display: inline;
+        }
+        header li {
+            margin: 20px;
+        }
+        header li a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            text-align: left; /* Left align the content */
+            margin-top: 20px; /* Add top margin */
+        }
+        .social-icons {
+            margin-top: 20px; /* Add top margin */
+        }
+        .pdf-link {
+            display: block; /* Display the PDF link as a block */
+            margin-top: 20px; /* Add top margin */
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 23px; /* Adjust the width of the icons */
+            height: 23px; /* Adjust the height of the icons */
+            margin: 0 10px; /* Add spacing between icons */
+        }
+        nav ul li:first-of-type {
+            margin-left: 0; /* Remove the margin for the first list item */
+        }
+    </style>
+</head>
+<body style="background-color:black;">
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p style="color: white;">
+            Born in Kyiv, Ukraine, I attended an international school and applied to university in New York. I was always fond of mathematics and curious about physics, but I applied to study cinema, which at the time I had developed a passion for studying on my own time. Then, my vision shifted towards Psychology, as I sought to learn more about the human psyche and the range of human experience. I also studied sociology and philosophy, and formed a philosophical field of interest which I self-titled Fractal Psychology. I was lucky to also study some programs for visual creation, such as P5js, Resolume, Touchdesigner, and landing on Unity as a tool for further application in collaborative experiences. From a young age, I enjoyed learning software, teaching myself video editing, and acquiring excellent PowerPoint skills. Coding, learning the intricacies of software has always been a welcome challenge to my mathematics-loving mind. Unity allowed me to unite my passion for coding with a love for interacting with artists and creating shared collaborative experiences. The next passion for light design came naturally as it also fuses these two together in the creation of collaborative magical experience, with a detail-oriented knowledge of software and imminent troubleshooting and problem-solving.
+        </p>
+    </div>
+
+    <div class="social-icons">
+        <!-- Instagram icon with link -->
+        <a href="https://www.instagram.com/veronika.romaniuk.303/" target="_blank"><img src="instagram_icon.png" alt="Instagram"></a>
+        
+        <!-- Facebook icon with link -->
+        <a href="https://www.facebook.com/veronika.romaniuk27/" target="_blank"><img src="facebook_icon.png" alt="Facebook"></a>
+        
+        <!-- Behance icon with link -->
+        <a href="https://www.behance.net/veronikaromaniuk" target="_blank"><img src="behance_icon.png" alt="Behance"></a>
+    </div>
+    
+    <!-- Link to PDF document -->
+    <a href="CV.pdf" class="pdf-link">CV PDF</a>
+</body>
+</html>
