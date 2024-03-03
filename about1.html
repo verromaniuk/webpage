@@ -54,8 +54,16 @@
             height: 23px; /* Adjust the height of the icons */
             margin: 0 10px; /* Add spacing between icons */
         }
-        nav ul li:first-of-type {
-            margin-left: 0; /* Remove the margin for the first list item */
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+        }
+        nav ul li {
+            display: inline; /* Display list items horizontally */
+            margin: 0; /* Remove default margin */
+        }
+        nav ul li:first-child {
+            margin-left: 0; /* Remove margin for the first list item */
         }
     </style>
 </head>
