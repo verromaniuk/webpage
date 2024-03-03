@@ -7,11 +7,12 @@
     <style type="text/css">
         body {
             height: auto;
-            margin-top: 80px;
-            padding: 30px;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
             background-color: black;
             font-family: sans-serif;
             color: white;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
         header {
             background-color: blue;
@@ -37,9 +38,9 @@
         section {
             margin-top: 20px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        img, video {
+            width: 100vw; /* Set width to fill the entire viewport width */
+            height: auto; /* Maintain aspect ratio */
         }
         ul {
             list-style: none;
