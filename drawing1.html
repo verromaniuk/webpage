@@ -38,8 +38,10 @@
     }
 
     img {
-      max-width: 50%; /* Adjusted to 50% for half of the current size */
-      height: auto; /* Maintains aspect ratio */
+      width: 100vw; /* Adjusted to fill the full width of the viewport */
+      height: 100vh; /* Adjusted to fill the full height of the viewport */
+      object-fit: cover; /* Ensures the image covers the entire container */
+      object-position: center; /* Centers the image within the container */
     }
 
     ul {
