@@ -54,9 +54,10 @@
       font-weight: normal;
       color: #ffffff;
     }
-      @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
       img {
-        max-width: 100%; /* Adjusted to 100% for full screen on mobile */
+        width: 100vw; /* Adjusted to 100% viewport width for full screen on mobile */
+        height: auto; /* Allows the height to adjust proportionally */
       }
     }
   </style>
